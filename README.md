@@ -1,3 +1,5 @@
+[![Docker Pulls](https://img.shields.io/docker/pulls/msteinert/drone-tower.svg)](https://hub.docker.com/r/msteinert/drone-tower/)
+
 # drone-tower
 
 Drone plugin for [Ansible Tower]
