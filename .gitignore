@@ -1,7 +1,6 @@
 # Python gunkage
 *.pyc
-*.egg
-*.egg-info
+*.egg*
 .coverage
 .tox
 dist

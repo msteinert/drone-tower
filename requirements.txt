@@ -1,2 +1,2 @@
-ansible-tower-cli
-drone
+ansible-tower-cli==2.3.0
+drone==0.2

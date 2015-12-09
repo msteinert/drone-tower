@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 
-from drone_tower import DroneTower
+from drone_tower import DroneTower, TowerCliError
+import os
 
 
 if __name__ == '__main__':
-    DroneTower().run()
+    try:
+        DroneTower().run()
+    except TowerCliError as e:
+        os.exit(e.returncode)
+    os.exit(0)

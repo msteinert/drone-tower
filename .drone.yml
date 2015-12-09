@@ -1,0 +1,7 @@
+build:
+  image: python:3.4
+  commands:
+    - pip install -r requirements.txt
+    - pip install -r dev-requirements.txt
+    - flake8 setup.py drone_tower bin tests
+    - nosetests -s --with-coverage --cover-package drone_tower -v
