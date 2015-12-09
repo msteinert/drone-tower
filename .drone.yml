@@ -5,3 +5,13 @@ build:
     - pip install -r dev-requirements.txt
     - flake8 setup.py drone_tower bin tests
     - nosetests -s --with-coverage --cover-package drone_tower -v
+
+plugin:
+  name: Ansible Tower
+  desc: Run Ansible Tower commands
+  type: deploy
+  image: msteinert/drone-tower
+  labels:
+    - deploy
+    - ansible
+    - tower-cli
